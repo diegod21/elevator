@@ -1,0 +1,109 @@
+/* Estilo principal */
+.elevator-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Estilo para os pisos */
+  .floors {
+    margin-bottom: 20px;
+  }
+  
+  .floor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .call-btn {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo quando o elevador está no andar */
+  .elevator-here {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  /* Estilo do painel de controle */
+  .control-panel {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .control-panel h1 {
+    color: #4CAF50;
+    font-size: 24px;
+  }
+  
+  /* Estilo do painel em grid */
+  .grid-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os botões */
+    grid-gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .control div {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .go-btn {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .go-btn:hover {
+    background-color: #e68900;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .grid-panel {
+      grid-template-columns: 1fr 1fr; /* 2 colunas para telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-panel {
+      grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
+    }
+  }
+  
